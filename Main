@@ -1,0 +1,36 @@
+loop = int(0)
+
+while loop == 0:
+    operador = int(input("""Escolha o operador matemático que utilizará (1-4)
+Digite 1 para Adição
+Digite 2 para Subtração
+Digite 3 para Multiplicação 
+Digite 4 para Divisão
+-> """))
+    match operador:
+        case 1:
+            num1 = float(input("Digite o valor do primeiro número: "))
+            num2 = float(input("Digite o valor do segundo número: "))
+            resultado = num1 + num2
+            print(f"Seu resultado é: {resultado}")
+            loop = float(input("Se deseja parar digite 0, para continuar, digite qualquer outro número "))
+        case 2:
+            num1 = float(input("Digite o valor do primeiro número: "))
+            num2 = float(input("Digite o valor do segundo número: "))
+            resultado = num1 - num2
+            print(f"Seu resultado é: {resultado}")
+            loop = float(input("Se deseja parar digite 0, para continuar, digite qualquer outro número "))
+        case 3:
+            num1 = float(input("Digite o valor do primeiro número: "))
+            num2 = float(input("Digite o valor do segundo número: "))
+            resultado = num1 * num2
+            print(f"Seu resultado é: {resultado}")
+            loop = float(input("Se deseja parar digite 0, para continuar, digite qualquer outro número "))
+        case 4:
+            num1 = float(input("Digite o valor do primeiro número: "))
+            num2 = float(input("Digite o valor do segundo número: "))
+            resultado = num1 / num2
+            print(f"Seu resultado é: {resultado}")
+            loop = float(input("Se deseja continuar digite 0, para parar, digite qualquer outro número "))
+        case _:
+            print("Esta não é uma operação válida!")
